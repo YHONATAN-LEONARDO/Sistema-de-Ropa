@@ -1,0 +1,289 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #fff; /* Fondo blanco limpio */
+}
+
+/* Caja principal del login */
+.login-box {
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h2 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border-bottom: 2px solid #000000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.2rem;
+}
+
+.formulario label {
+  font-size: 1.4rem;
+  text-align: left;
+  color: #000;
+  font-weight: 500;
+}
+
+.formulario input {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.formulario input:focus {
+  border-color: #e60000;
+  box-shadow: 0 0 5px rgba(230, 0, 0, 0.3);
+}
+
+/* Botón */
+.formulario button {
+  background-color: #e60000;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Enlace de registro */
+.formulario p {
+  font-size: 1.3rem;
+  color: #000;
+  margin-top: 1.5rem;
+}
+
+.formulario a {
+  color: #e60000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.formulario a:hover {
+  text-decoration: underline;
+}
+.registrate{
+    color: #000502;
+}
+/* Responsivo */
+@media (max-width: 400px) {
+  .login-box {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+
+
+
+/* resgitrar */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #fff; /* fondo blanco limpio */
+}
+.login-body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", Arial, sans-serif;
+
+  /* Fondo de imagen */
+  background: url("../../public/img/icons/fondo.jpg") no-repeat center center fixed;
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+}
+
+
+.body-register {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", Arial, sans-serif;
+  /* Fondo con imagen */
+  background: url("../../public/img/icons/fondo2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Caja principal del registro */
+.login-box {
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h2 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.2rem;
+}
+
+.formulario label {
+  font-size: 1.4rem;
+  text-align: left;
+  color: #000;
+  font-weight: 500;
+}
+
+.formulario input {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.formulario input:focus {
+  border-color: #e60000;
+  box-shadow: 0 0 5px rgba(230, 0, 0, 0.3);
+}
+
+/* Botón */
+.formulario button {
+  background-color: #e60000;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Enlace de login */
+.formulario p {
+  font-size: 1.3rem;
+  color: #000;
+  margin-top: 1.5rem;
+}
+
+.formulario a {
+  color: #e60000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.formulario a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 400px) {
+  .login-box {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+.logo-login{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
