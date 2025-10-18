@@ -11,6 +11,8 @@
   <main class="login">
     <section class="login-box">
       <h2>Crear Cuenta</h2>
+
+      <!-- formulario -->
       <form class="formulario" action="../../app/controllers/UsuarioController.php" method="POST">
         
         <label for="nombre">Nombre completo:</label>
@@ -30,6 +32,7 @@
 
         <button type="submit" name="accion" value="registrar">Registrarse</button>
       </form>
+      <!-- formulario -->
 
       <p>¿Ya tienes una cuenta? <a href="login.php" class="registrate">Inicia sesión aquí</a></p>
     </section>

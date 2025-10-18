@@ -10,14 +10,16 @@
     <?php include "views/layouts/header.php"; ?>
 
     <main class="principal">
-        <h1>Bienvenido a EcoAbrigo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae placeat odio sunt cupiditate consequuntur repellat nobis fugiat asperiores dicta velit, cum animi aliquam ullam veritatis est laudantium perspiciatis nam nisi?</p>
+        <div class="img-p">
+            <img src="public/img/principal/hombre.jpg" class="img-principal" alt="">
+            <h2>HOMBRES</h2>
+            <button>Comprar Hombre</button>
+        </div>
+        <div class="img-p">
+            <img src="public/img/principal/mujer.jpg" class="img-principal" alt="">
+            <h2>MUJERES</h2>
+            <button>Comprar Mujer</button>
+        </div>
     </main>
 
     <?php include "views/layouts/footer.php"; ?>

@@ -24,7 +24,7 @@ body {
 /* Header */
 header {
   position: relative;
-  height: 60rem;
+  height: 75rem;
 
 }
 header video {
@@ -109,4 +109,66 @@ footer {
 
 .redes-sociales a img:hover {
   transform: scale(1.2);
+}
+
+/* Principal */
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Contenedor de cada imagen */
+.img-p {
+  position: relative;
+  width: 100%;
+  height: 70rem;
+  overflow: hidden;
+}
+
+.img-principal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+.img-p:hover .img-principal {
+  filter: brightness(50%);
+}
+
+/* Título centrado */
+.img-p h2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón */
+.img-p button {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+    transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5rem;
+  padding: 1.2rem 3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.img-p button:hover {
+  background-color: #040604;
+  width: ;
 }
