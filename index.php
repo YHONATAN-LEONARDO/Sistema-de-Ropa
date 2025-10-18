@@ -43,22 +43,24 @@
         </div>
         <div class="carousel">
             <div class="group">
-                <img class="card" src="public/img/principal/im1.png" alt="">
-                <img class="card" src="public/img/principal/im2.png" alt="">
-                <img class="card" src="public/img/principal/im3.png" alt="">
-                <img class="card" src="public/img/principal/im4.png" alt="">
-                <img class="card" src="public/img/principal/im5.jpg" alt="">
-                <img class="card" src="public/img/principal/im6.jpg" alt="">
-                <img class="card" src="public/img/principal/im7.png" alt="">
+                <img class="card" src="public/img/principal/m1.jpg" alt="">
+                <img class="card" src="public/img/principal/m2.jpg" alt="">
+                <img class="card" src="public/img/principal/m3.jpg" alt="">
+                <img class="card" src="public/img/principal/m4.jpg" alt="">
+                <img class="card" src="public/img/principal/m5.jpg" alt="">
+                <img class="card" src="public/img/principal/m6.jpg" alt="">
+                <img class="card" src="public/img/principal/m7.jpg" alt="">
+                <img class="card" src="public/img/principal/m8.jpg" alt="">
             </div>
             <div aria-hidden class="group">
-                <img class="card" src="public/img/principal/im1.png" alt="">
-                <img class="card" src="public/img/principal/im2.png" alt="">
-                <img class="card" src="public/img/principal/im3.png" alt="">
-                <img class="card" src="public/img/principal/im4.png" alt="">
-                <img class="card" src="public/img/principal/im5.jpg" alt="">
-                <img class="card" src="public/img/principal/im6.jpg" alt="">
-                <img class="card" src="public/img/principal/im7.png" alt="">
+                <img class="card" src="public/img/principal/m1.jpg" alt="">
+                <img class="card" src="public/img/principal/m2.jpg" alt="">
+                <img class="card" src="public/img/principal/m3.jpg" alt="">
+                <img class="card" src="public/img/principal/m4.jpg" alt="">
+                <img class="card" src="public/img/principal/m5.jpg" alt="">
+                <img class="card" src="public/img/principal/m6.jpg" alt="">
+                <img class="card" src="public/img/principal/m7.jpg" alt="">
+                <img class="card" src="public/img/principal/m8.jpg" alt="">
             </div>
         </div>
     </main>
