@@ -8,12 +8,13 @@
 </head>
 <body>
     <?php include "views/layouts/header.php"; ?>
-
+<!-- mensaje -->
     <main class="principal">
         <div class="img-p">
             <img src="public/img/principal/hombre.jpg" class="img-principal" alt="">
-            <h2>HOMBRES</h2>
-            <button>Comprar Hombre</button>
+            <h2>Estilo que te acompaña</h2>
+
+                <button>Comprar Hombre</button>
         </div>
 
         <div class="carousel">
@@ -38,7 +39,9 @@
         </div>
         <div class="img-p">
             <img src="public/img/principal/mujer.jpg" class="img-principal" alt="">
-            <h2>MUJERES</h2>
+            <h2>Moda que inspira</h2>
+
+
             <button>Comprar Mujer</button>
         </div>
         <div class="carousel">

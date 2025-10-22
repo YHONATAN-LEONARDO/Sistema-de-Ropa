@@ -178,8 +178,7 @@ footer {
   width: 90%;
   display: flex;
   overflow: auto;
-  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.18),
-    /* izquierda */ 1rem 1rem 1rem rgba(0, 0, 0, 0.18); /* derecha */
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -189,14 +188,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  animation: spin 8s infinite linear;
+  animation: spin 15s infinite linear;
   padding-right: 1em;
 }
 .card {
   flex: 0 0 5em;
   height: 40rem;
   align-content: center;
-  border-radius: 4rem;
+  border-radius: 1.2rem;
   margin: 1rem;
 }
 @keyframes spin {
