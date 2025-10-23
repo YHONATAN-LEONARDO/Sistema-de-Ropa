@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="public/css/estilos.css">
+  <link rel="stylesheet" href="./public/css/estilos.css">
 </head>
 <body>
-  <?php include 'views/layouts/header.php' ?>
-
+    <?php include __DIR__ . '/views/layouts/header.php'; ?>
   <main>
-    <!-- esta img tiene que 100% with  y cada card maximo 8 columnas de 4-->
-    <img class="img-completo" src="/public/img/principal/hombre.jpg" alt="">
-    <?php  include 'anuncios.php' ?>
+    <img class="img-completo" src="public/img/principal/hombre.jpg" alt="Hombre">
+    <?php include __DIR__ . '/anuncios.php'; ?>
   </main>
-  <?php include 'views/layouts/footer.php' ?>
+  <?php include __DIR__ . '/views/layouts/footer.php'; ?>
+
 </body>
 </html>
