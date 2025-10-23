@@ -101,7 +101,7 @@ body {
 .alerta {
   width: 80%;
   max-width: 400px;
-  margin: 20px auto; /* centra horizontalmente */
+  margin: 20px auto;
   padding: 12px 18px;
   border-radius: 6px;
   text-align: center;
@@ -110,8 +110,79 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.alerta.error {
+.error {
   background-color: #ffe5e5;
   color: #a60000;
   border: 1px solid #ff4d4d;
+}
+.exito{
+  background-color: #e5ffe9;
+  color: #00a611;
+  border: 1px solid #4dff4d;
+}
+
+
+
+/* Pagina producto */
+table {
+  width: 80rem;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #2ecc71; /* verde brillante */
+  color: white;
+}
+
+th, td {
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tbody tr:hover {
+  background-color: #e8ffe8; /* efecto hover suave */
+}
+
+.tabla-img {
+  width: 40px; /* tamaño pequeño pero visible */
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Botones --- */
+a.boton {
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+a.eliminar {
+  background-color: #e74c3c; /* rojo */
+}
+
+
+
+.actualizar {
+  background-color: #20df49; /* azul */
+}
+
+.fondo-nav{
+  
 }

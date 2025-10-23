@@ -9,6 +9,6 @@ $connectionInfo = [
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 if ($conn === false) {
-    die("❌ Error de conexión a SQL Server: " . print_r(sqlsrv_errors(), true));
+    die("Error de conexión a SQL Server: " . print_r(sqlsrv_errors(), true));
 }
 ?>

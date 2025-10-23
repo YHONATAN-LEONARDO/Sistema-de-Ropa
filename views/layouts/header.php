@@ -2,10 +2,11 @@
 <header>
     <nav class="navegacion">
         <div class="enlace-uno">
-            <a href="/views/hombre.php">Hombre</a>
-            <a href="/views/mujer.php">Mujer</a>
-            <a href="/views/acerca.php">Nosotros</a>
-            <a href="/views/contacto.php">Contáctanos</a>
+            <a href="/" class="especial"><img class="logo" src="public/img/logo.png" alt=""></a>
+            <a href="hombre.php">Hombre</a>
+            <a href="mujer.php">Mujer</a>
+            <a href="acerca.php">Nosotros</a>
+            <a href="contacto.php">Contáctanos</a>
         </div>
         <div class="enlace-dos">
             <a href="/views/usuarios/login.php">Iniciar Sesión</a>
