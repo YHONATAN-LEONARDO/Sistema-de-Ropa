@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/estilos.css">
+    <link rel="stylesheet" href="/public/css/normalize.css">
+
     <title>EcoAbrigo</title>
 </head>
 <body>
@@ -19,7 +21,6 @@
 
                 <a href="hombre.php?genero=1">
                     <button>Comprar</button>
-
                 </a>
         </div>
          <h1 class="t-p">Fuerza, estilo y confianza en cada detalle</h1>
