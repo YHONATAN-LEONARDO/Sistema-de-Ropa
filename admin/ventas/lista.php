@@ -19,21 +19,21 @@ $sql = "
   LEFT JOIN vendedor ve ON v.vendedor = ve.id
   ORDER BY v.id DESC
 ";
-// $resultado = sqlsrv_query($conn, $sql);
-// if ($resultado === false) {
-//   die('Error al consultar ventas: ' . print_r(sqlsrv_errors(), true));
-// }
+$resultado = sqlsrv_query($conn, $sql);
+if ($resultado === false) {
+  die('Error al consultar ventas: ' . print_r(sqlsrv_errors(), true));
+}
 
-// function sv_fmt_fecha($f){
-//   // SQLSRV puede devolver DateTime o array con 'date'
-//   if ($f instanceof DateTime) return $f->format('Y-m-d H:i');
-//   if (is_array($f) && isset($f['date'])) return date('Y-m-d H:i', strtotime($f['date']));
-//   return htmlspecialchars((string)$f);
-// }
-// function sv_fmt_bs($n){
-//   if ($n === null) return '0.00';
-//   return number_format((float)$n, 2, '.', '');
-// }
+function sv_fmt_fecha($f){
+  // SQLSRV puede devolver DateTime o array con 'date'
+  if ($f instanceof DateTime) return $f->format('Y-m-d H:i');
+  if (is_array($f) && isset($f['date'])) return date('Y-m-d H:i', strtotime($f['date']));
+  return htmlspecialchars((string)$f);
+}
+function sv_fmt_bs($n){
+  if ($n === null) return '0.00';
+  return number_format((float)$n, 2, '.', '');
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">

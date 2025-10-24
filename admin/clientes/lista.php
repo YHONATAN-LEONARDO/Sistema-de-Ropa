@@ -9,27 +9,27 @@ include '../../app/config/database.php';
   - Tabla clientes: id, nombre, apellido, correo, telefono, creado_en
 */
 
-// $sql = "
-//   SELECT
-//     id,
-//     nombre,
-//     apellido,
-//     correo,
-//     telefono,
-//     creado_en
-//   FROM clientes
-//   ORDER BY id DESC
-// ";
-// $resultado = sqlsrv_query($conn, $sql);
-// if ($resultado === false) {
-//   die('Error al consultar clientes: ' . print_r(sqlsrv_errors(), true));
-// }
+$sql = "
+  SELECT
+    id,
+    nombre,
+    apellido,
+    correo,
+    telefono,
+    creado_en
+  FROM clientes
+  ORDER BY id DESC
+";
+$resultado = sqlsrv_query($conn, $sql);
+if ($resultado === false) {
+  die('Error al consultar clientes: ' . print_r(sqlsrv_errors(), true));
+}
 
-// function cl_fmt_fecha($f){
-//   if ($f instanceof DateTime) return $f->format('Y-m-d');
-//   if (is_array($f) && isset($f['date'])) return date('Y-m-d', strtotime($f['date']));
-//   return htmlspecialchars((string)$f);
-// }
+function cl_fmt_fecha($f){
+  if ($f instanceof DateTime) return $f->format('Y-m-d');
+  if (is_array($f) && isset($f['date'])) return date('Y-m-d', strtotime($f['date']));
+  return htmlspecialchars((string)$f);
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">

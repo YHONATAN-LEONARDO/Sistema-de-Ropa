@@ -20,16 +20,16 @@ $sql = "
   FROM empleados
   ORDER BY id DESC
 ";
-// $resultado = sqlsrv_query($conn, $sql);
-// if ($resultado === false) {
-//   die('Error al consultar empleados: ' . print_r(sqlsrv_errors(), true));
-// }
+$resultado = sqlsrv_query($conn, $sql);
+if ($resultado === false) {
+  die('Error al consultar empleados: ' . print_r(sqlsrv_errors(), true));
+}
 
-// function ue_fmt_fecha($f){
-//   if ($f instanceof DateTime) return $f->format('Y-m-d');
-//   if (is_array($f) && isset($f['date'])) return date('Y-m-d', strtotime($f['date']));
-//   return htmlspecialchars((string)$f);
-// }
+function ue_fmt_fecha($f){
+  if ($f instanceof DateTime) return $f->format('Y-m-d');
+  if (is_array($f) && isset($f['date'])) return date('Y-m-d', strtotime($f['date']));
+  return htmlspecialchars((string)$f);
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">

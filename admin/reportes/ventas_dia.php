@@ -17,20 +17,20 @@ $sql = "
   GROUP BY CONVERT(date, v.fecha)
   ORDER BY dia DESC
 ";
-// $resultado = sqlsrv_query($conn, $sql);
-// if ($resultado === false) {
-//   die('Error al consultar reportes: ' . print_r(sqlsrv_errors(), true));
-// }
+$resultado = sqlsrv_query($conn, $sql);
+if ($resultado === false) {
+  die('Error al consultar reportes: ' . print_r(sqlsrv_errors(), true));
+}
 
-// function rp_fmt_dia($d){
-//   if ($d instanceof DateTime) return $d->format('Y-m-d');
-//   if (is_array($d) && isset($d['date'])) return date('Y-m-d', strtotime($d['date']));
-//   return htmlspecialchars((string)$d);
-// }
-// function rp_fmt_bs($n){
-//   if ($n === null) return '0.00';
-//   return number_format((float)$n, 2, '.', '');
-// }
+function rp_fmt_dia($d){
+  if ($d instanceof DateTime) return $d->format('Y-m-d');
+  if (is_array($d) && isset($d['date'])) return date('Y-m-d', strtotime($d['date']));
+  return htmlspecialchars((string)$d);
+}
+function rp_fmt_bs($n){
+  if ($n === null) return '0.00';
+  return number_format((float)$n, 2, '.', '');
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
