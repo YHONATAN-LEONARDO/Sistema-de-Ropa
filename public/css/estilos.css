@@ -19,6 +19,7 @@ body {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+    background-color:#f4f1ee;
 }
 
 /* Header */
@@ -100,7 +101,7 @@ nav div a:hover::after {
   width: 100%;
   height: 100px;
   overflow: hidden;
-  background: linear-gradient(to bottom, #fdfdfd, #e6e6e6);
+  background: linear-gradient(to bottom, #fdfdfd, #f4f1ee;);
   margin-top: 6rem;
 }
 
@@ -328,6 +329,8 @@ nav div a:hover::after {
   font-family: "Inter", Arial, sans-serif;
   padding: 60px 8%;
   line-height: 1.6;
+  width: 150rem;
+  margin: 5rem auto;
 }
 
 .contacto-titulo {
@@ -524,7 +527,7 @@ nav div a:hover::after {
 
 /* ======== ACERCA (Nosotros) ======== */
 .acerca-main {
-  background-color: #ffffff;
+  background-color: #f4f1ee;
   color: #000000;
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
@@ -742,4 +745,432 @@ ion-icon {
 
 .ti{
   font-size: 4.3rem;
+}
+.main-ropa{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.img-completo{
+  margin: 5rem auto;
+  width: 90%;
+  height: auto;
+}
+
+
+/* ==== GRID ==== */
+.grid-anuncios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  place-items: center; 
+  height: auto;
+  padding: 8rem;
+}
+
+
+
+/* === Card general === */
+.card-anuncio {
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  text-align: center;
+  position: relative;
+  max-width: 340px;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.card-anuncio:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* === Imagen === */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  height: 420px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 2rem;
+}
+
+.card-anuncio:hover img {
+  transform: scale(1.08);
+}
+
+/* === Etiqueta superior === */
+.etiqueta-nuevo {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background-color: #e60023; /* rojo intenso */
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px rgba(230, 0, 35, 0.4);
+}
+
+/* === Íconos superiores === */
+.top-icons {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.bola-negra,
+.bola-verde {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.icono-corazon {
+  font-size: 2rem;
+  color: #e60023;
+  transition: all 0.3s ease;
+}
+
+.icono-corazon:hover {
+  transform: scale(1.2);
+}
+
+/* === Overlay oscuro con botón === */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card-anuncio:hover .overlay {
+  opacity: 1;
+}
+
+.ver-detalle {
+  background: #fff;
+  border: none;
+  color: #000;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.ver-detalle:hover {
+  background: #e60023;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* === Información === */
+.info {
+  padding: 2.5rem 2rem;
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e60023;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.estrellas {
+  display: flex;
+  justify-content: center;
+  color: #e60023;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  min-height: 55px;
+}
+
+.color {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.color span {
+  font-weight: 800;
+  color: #e60023;
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  margin-top: 0.5rem;
+}
+
+/* === Botón “añadir al carrito” === */
+.add-cart {
+  background: #e60023;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.add-cart:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.anuncio-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 5%;
+  background-color: #fff;
+  width: 150rem;
+  margin: 0 auto;
+}
+
+/* ======== IMAGEN DEL PRODUCTO ======== */
+.anuncio-img {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anuncio-img__img {
+  width: 60rem;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.anuncio-img__img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+}
+
+/* ======== PANEL DE INFORMACIÓN ======== */
+.anuncio-datos {
+  flex: 1 1 420px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anuncio-datos h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.anuncio-datos p {
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+/* ======== DESCRIPCIÓN ======== */
+.anuncio-descripcion-wrap {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.anuncio-descripcion {
+  color: #333;
+  font-size: 3rem;
+}
+
+.anuncio-mas-vendido-boton {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 6px 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* ======== COLOR Y TALLA ======== */
+.anuncio-label-color,
+.anuncio-label-talla {
+  margin-top: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.anuncio-color,
+.anuncio-talla {
+  font-size: 1.05rem;
+  color: #444;
+  text-transform: capitalize;
+}
+
+/* ======== SECCIÓN DE ACCIONES ======== */
+.anuncio-acciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+/* ======== CANTIDAD ======== */
+.anuncio-cantidad {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 25px;
+  padding: 6px 12px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.anuncio-cantidad button {
+  background: transparent;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+.anuncio-cantidad button:hover {
+  transform: scale(1.2);
+}
+
+.anuncio-cantidad-valor {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ======== BOTÓN AÑADIR ======== */
+.anuncio-add-cart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.anuncio-add-cart:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+/* ======== ENVÍO Y DISPONIBILIDAD ======== */
+.anuncio-envio-info {
+  font-size: 2rem;
+  color: #555;
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+.anuncio-disponibilidad-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 1.8rem;
+}
+
+.t-p {
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  margin: 3rem auto 4rem;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111;
+  font-family: 'Poppins', 'Didot', serif;
+  transition: all 0.3s ease;
+}
+
+/* Línea inferior con degradado */
+.t-p::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #000, #555);
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Efecto al pasar el mouse */
+.t-p:hover {
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.t-p:hover::after {
+  width: 90%;
+  background: linear-gradient(90deg, #000, #888);
 }

@@ -7,14 +7,18 @@
   <link rel="stylesheet" href="public/css/estilos.css">
 </head>
 <body>
-  <?php include 'views/layouts/header.php' ?>
+    <?php include __DIR__ . '/views/layouts/header.php'; ?>
+  <h1 class="titulo-ropa t-p">Brilla con tu propio estilo</h1>
 
-  <main>
-    <!-- esta img tiene que 100% with  y cada card maximo 8 columnas de 4-->
-    <img class="img-completo" src="/public/img/principal/hombre.jpg" alt="">
+  <main class="main-ropa">
+    <img class="img-completo" src="public/img/icons/p-m.png" alt="Hombre">
+    <h1 class="titulo-ropa t-p">Diseño para ella, presencia que destaca</h1>
 
-    <?php  include 'anuncios.php' ?>
+    <?php include __DIR__ . '/anuncios.php'; ?>
   </main>
-  <?php include 'views/layouts/footer.php' ?>
+
+
+  <?php include __DIR__ . '/views/layouts/footer.php'; ?>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
 
 <main class="acerca-main">
   <!-- Intro -->
-   <h1 class="acerca-titulo ti">
+   <h1 class="acerca-titulo ti t-p">
         SOBRE ECOABRIGO
       </h1>
   <section class="acerca-intro">

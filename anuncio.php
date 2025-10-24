@@ -21,11 +21,12 @@ $p = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC);
 ?>
 
 <?php include 'views/layouts/header.php'; ?>
+<h1 class="t-p">Estilo que conquista.</h1>
 <main class="anuncio-page">
   <div class="anuncio-img media">
     <img class="anuncio-img__img" src="imagenes/<?php echo $p['imagen']; ?>" alt="<?php echo $p['titulo']; ?>">
   </div>
-
+  
   <div class="anuncio-datos panel">
     <h1><?php echo $p['titulo']; ?></h1>
     <p><strong>Precio:</strong> <?php echo $p['precio']; ?> Bs</p>

@@ -9,13 +9,18 @@
 <body>
     <?php include "views/layouts/header.php"; ?>
 <!-- mensaje -->
+    <h1 class="t-p">Moda que habla por ti</h1>
     <main class="principal">
         <div class="img-p">
             <img src="public/img/principal/hombre.jpg" class="img-principal" alt="">
             <h2>Estilo que te acompaña</h2>
 
-                <button>Comprar Hombre</button>
+                <a href="hombre.php?genero=1">
+                    <button>Comprar</button>
+
+                </a>
         </div>
+         <h1 class="t-p">Fuerza, estilo y confianza en cada detalle</h1>
 
         <div class="carousel">
             <div class="group">
@@ -42,8 +47,13 @@
             <h2>Moda que inspira</h2>
 
 
-            <button>Comprar Mujer</button>
+             <a href="mujer.php?genero=0">
+                    <button>Comprar</button>
+
+                </a>
         </div>
+         <h1 class="t-p">Brilla con cada paso que das</h1>
+
         <div class="carousel">
             <div class="group">
                 <img class="card" src="public/img/principal/m1.jpg" alt="">

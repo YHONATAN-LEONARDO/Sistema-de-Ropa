@@ -10,8 +10,8 @@
 <body>
 <?php include "views/layouts/header.php"; ?>
 
+<h1 class="contacto-titulo t-p">Contáctanos</h1>
 <main class="contacto-main">
-  <h1 class="contacto-titulo">Contáctanos</h1>
   <section class="contacto-layout">
     
     <div class="contacto-formulario">
