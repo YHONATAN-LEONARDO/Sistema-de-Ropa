@@ -1,6 +1,6 @@
 
     <?php 
-
+        include '../../app/config/session.php';
         include  '../../app/config/database.php'; 
         $consultaVendedor = "SELECT * FROM vendedor";
         $resultado = sqlsrv_query($conn, $consultaVendedor);

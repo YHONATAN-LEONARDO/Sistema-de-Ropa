@@ -1,5 +1,5 @@
 <?php 
-
+include '../../app/config/session.php';
 include '../../app/config/database.php'; 
 
 // Obtener ID del producto a actualizar

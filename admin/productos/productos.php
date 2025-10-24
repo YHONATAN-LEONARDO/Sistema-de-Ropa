@@ -1,6 +1,6 @@
 <?php 
 include  '../../app/config/database.php'; 
-
+include '../../app/config/session.php';
 $mensaje = $_GET['mensaje'] ?? null;
 
 // Si se envía el formulario para eliminar
@@ -56,7 +56,7 @@ $resultado = sqlsrv_query($conn, $sql);
 </head>
 <body>
     <header class="header">
-        <h1 class="titulo">Registro de Ropa</h1>
+        <h1 class="titulo">Registros de Ropa</h1>
     </header>
 
     <?php if($mensaje == 1){ ?>
@@ -66,8 +66,12 @@ $resultado = sqlsrv_query($conn, $sql);
     <?php } elseif($mensaje == 3){ ?>
         <div class="alerta exito" id="mensaje">Producto eliminado correctamente</div>
     <?php } ?>
+    <div>
+        <a href="../index.php"><div class="crear">volver</div></a>
 
-    <a href="./crear.php"><div class="crear">Nuevo Producto</div></a>
+        <a href="./crear.php"><div class="crear">Nuevo Producto</div></a>
+    </div>
+    
 
     <table>
         <thead>
